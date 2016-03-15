@@ -1,10 +1,12 @@
 ####################################################
-# This script downloads each candidate's speeches. #
+# This script downloads each candidate's speeches  #
+# and stores them in a sqlite database.            #
 ####################################################
 
 from bs4 import BeautifulSoup
 import urllib
 import re
+import sqlite3
 
 class Candidate():
 
@@ -32,7 +34,7 @@ class Candidate():
 
         for link in self.speech_links:
             r = urllib.urlopen(link).read()
-            speech_text = BeautifulSoup(r).find_all("span", attrs={'class': "displaytext"})[0].getText()
+            speech_text = (BeautifulSoup(r).find_all("span", attrs={'class': "displaytext"})[0].getText()).encode("ascii", "ignore")
             self.speeches.append(speech_text)
 
 # Open file
@@ -55,7 +57,13 @@ for i in range(len(names)):
 # Get each candidate's speeches and store their links to an array in the Candidate object
 # TODO: Set to download all candidates speeches, not just candidates[40] (this is in here right now for debugging/developing because it takes
 #       a while to download all of the speeches
-print candidates[40].name
 candidates[40].downloadSpeeches()
 
-# TODO: Create a sqlite table to hold the candidates[] array
+# TODO: Extend this to all candidates and all of their speeches
+# TODO: Add some checking so an existing table isn't accidentally overwritten.
+conn = sqlite3.connect('speeches.db')
+c = conn.cursor()
+c.execute('''CREATE TABLE speeches (name text, party text, year integer, speech text)''')
+c.execute("INSERT INTO speeches VALUES (?, ?, ?, ?)", (candidates[40].name, candidates[40].party, candidates[40].year, candidates[40].speeches[0]))
+conn.commit()
+conn.close()
