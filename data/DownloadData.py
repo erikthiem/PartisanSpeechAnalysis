@@ -33,10 +33,16 @@ class Candidate():
                 link = baseURL +  relative_link.get('href').split('..')[1]
                 self.speech_links.append(link)
 
+        # Fixes bug where each speech is saved 3 times
+        self.speech_links_set = set(self.speech_links)
+
         # Store the text of each speech
         self.speeches = []
 
-        for link in self.speech_links:
+        for speech in self.speeches:
+            print speech
+
+        for link in self.speech_links_set:
             r = urllib.urlopen(link).read()
             speech_text = (BeautifulSoup(r).find_all("span", attrs={'class': "displaytext"})[0].getText()).encode("ascii", "ignore")
             self.speeches.append(speech_text)
@@ -50,7 +56,7 @@ if not os.path.isfile(links_filename):
 
 # Error checking for database file existence
 if os.path.isfile(database_filename):
-    answer = raw_input("Database '{0}' already exists. Are you sure you want to delete and re-create it? This will take ~45 minutes. (y/n): ".format(database_filename)).lower()
+    answer = raw_input("Database '{0}' already exists. Are you sure you want to delete and re-create it? This will take ~11 minutes. (y/n): ".format(database_filename)).lower()
     if (answer == 'y' or answer == 'yes'):
         print("Re-creating database.\n")
         os.remove(database_filename)
@@ -79,7 +85,7 @@ for c in candidates:
     print("Downloaded speeches from {0} from {1}".format(c.name, c.year))
 
 # Create the SQL table
-conn = sqlite3.connect('speeches.db')
+conn = sqlite3.connect(database_filename)
 c = conn.cursor()
 c.execute('''CREATE TABLE speeches (name text, party text, year integer, speech text)''')
 
