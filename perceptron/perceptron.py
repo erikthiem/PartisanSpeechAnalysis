@@ -26,13 +26,38 @@ def sentencesFromDB(db_file_path):
 
     return sentences
 
+def generateWordCountMatrix(training_sentences):
+    # TODO
+    pass
+
+
+def generatePartyVector(training_sentences):
+    # TODO
+    pass
 
 def train(training_sentences, num_iterations):
-    
+    # TODO 
 
     for iteration in range(num_iterations):
         print iteration
 
+
+def predict(testing_sentences, weights):
+    # TODO
+    return []
+    pass
+
+
+def percentSimilar(list1, list2):
+
+    total = len(list1)
+    count_similar = 0
+
+    for i in range(len(list1)):
+        if list1[i] == list2[i]:
+            count_similar += 1
+
+    return float(count_similar) / total
 
 
 if __name__ == "__main__":
@@ -53,11 +78,26 @@ if __name__ == "__main__":
         print "Error! Testing database {0} does not exist.\n".format(testing_data_path)
         exit(-1)
 
+    # Load the Training data
     training_sentences = sentencesFromDB(training_data_path)
-    testing_sentences = sentencesFromDB(testing_data_path)
 
     # TODO: Generate "X[sentence_id, word_id] = word_count" sparse matrix
+    X = generateWordCountMatrix(training_sentences)
+
     # TODO: Generate "Y[sentence_id] = party" vector
+    Y = generatePartyVector(training_sentences)
+
     # Note: both of these are modeled after the 5525 HW1, Preceptron assignment
 
     weights = train(training_sentences, num_iterations)
+
+    # Load the testing data
+    testing_sentences = sentencesFromDB(testing_data_path)
+
+    # Predict each of the testing sentences
+    predicted_classifications = predict(testing_sentences, weights)
+
+    # Determine accuracy of predictions
+    correct_classifications = [s.party for s in testing_sentences]
+    #accuracy = percentSimilar(predicted_classifications, correct_classifications)
+    #print("Accuracy: {0}".format(accuracy))
