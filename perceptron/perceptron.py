@@ -1,7 +1,9 @@
 import sys
 import sqlite3
 import os
-import numpy as np
+import numpy
+from scipy.sparse import lil_matrix
+from collections import defaultdict
 
 class Sentence():
     
@@ -26,20 +28,64 @@ def sentencesFromDB(db_file_path):
 
     return sentences
 
+
+# Generate "X[sentence_id, word_id] = word_count" sparse matrix
 def generateWordCountMatrix(training_sentences):
-    # TODO
-    pass
+
+    sentence_word_frequencies = []
+
+    # Create a dictionary to store all words in order to get vocabulary size
+    all_word_dict = defaultdict(int)
+
+    for sentence in training_sentences:
+        words = sentence.text.lower().split(" ")
+        word_frequencies = {w:words.count(w) for w in set(words)}
+        sentence_word_frequencies.append(word_frequencies)
+        for word in words:
+            all_word_dict[word] += 1
+
+    # Create dictionaries to do "word" -> "word ID" and "word ID" -> "word"
+    word_to_id = {}
+    id_to_word = {}
+    word_id = 0
+    for word in all_word_dict.iteritems():
+        word_to_id[word[0]] = word_id
+        id_to_word[word_id] = word[0]
+        word_id += 1
+
+    # Create blank X matrix
+    X = lil_matrix( (len(training_sentences), len(all_word_dict)))
+
+    # Populate X matrix with the values from the word frequencies in each sentence
+    for sentence in range(len(sentence_word_frequencies)):
+        for word, frequency in sentence_word_frequencies[sentence].iteritems():
+            X[sentence, word_to_id[word]] = frequency
+
+    # Convert X to sparse CSR format
+    X = X.tocsr()
+
+    print X.shape
+
+    return X
 
 
+# Generate "Y[sentence_id] = party" vector
 def generatePartyVector(training_sentences):
-    # TODO
-    pass
 
-def train(training_sentences, num_iterations):
+    Y = numpy.zeros((len(training_sentences), 1), dtype=int)
+    
+    for sentence in range(len(training_sentences)):
+        if training_sentences[sentence].party == "Democratic":
+            Y[sentence] = 1
+        else:
+            Y[sentence] = 0
+
+    return Y
+
+
+def train(X, num_iterations):
     # TODO 
-
-    for iteration in range(num_iterations):
-        print iteration
+    pass
 
 
 def predict(testing_sentences, weights):
@@ -81,10 +127,10 @@ if __name__ == "__main__":
     # Load the Training data
     training_sentences = sentencesFromDB(training_data_path)
 
-    # TODO: Generate "X[sentence_id, word_id] = word_count" sparse matrix
+    # Generate "X[sentence_id, word_id] = word_count" sparse matrix
     X = generateWordCountMatrix(training_sentences)
 
-    # TODO: Generate "Y[sentence_id] = party" vector
+    # Generate "Y[sentence_id] = party" vector
     Y = generatePartyVector(training_sentences)
 
     # Note: both of these are modeled after the 5525 HW1, Preceptron assignment
