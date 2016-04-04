@@ -60,6 +60,9 @@ for result in all_results:
     else:
         democratic_sentences.append(s)
 
+print len(republican_sentences)
+print len(democratic_sentences)
+
 # Randomly lob off the bigger of the datasets (Democratic in this case) so that 
 # they are the same size. This is important, especially for Naive Bayes.
 random.shuffle(democratic_sentences)

@@ -100,7 +100,7 @@ def generatePartyVector(training_sentences):
         if training_sentences[sentence].party == "Democratic":
             Y[sentence] = 1
         else:
-            Y[sentence] = 0
+            Y[sentence] = -1
 
     return Y
 
@@ -171,6 +171,8 @@ if __name__ == "__main__":
     # Load the Training data
     training_sentences = sentencesFromDB(training_data_path)
 
+    print len(training_sentences)
+
     # Generate "X[sentence_id, word_id] = word_count" sparse matrix
     word_to_id = {}
     id_to_word = {}
@@ -183,6 +185,8 @@ if __name__ == "__main__":
 
     # Load the testing data
     testing_sentences = sentencesFromDB(testing_data_path)
+
+    print len(testing_sentences)
 
     testX = generateWordCountMatrixTest(testing_sentences, trainX, word_to_id, id_to_word)  
 
@@ -197,9 +201,8 @@ if __name__ == "__main__":
         if c == "Democratic":
             correct_classifications.append(1)
         else:
-            correct_classifications.append(0)
+            correct_classifications.append(-1)
 
-    # TODO: Convert party name to number [1 for dem, 0 for repub]
     accuracy = percentSimilar(predicted_classifications, correct_classifications)
     print("Accuracy: {0}".format(accuracy))
 

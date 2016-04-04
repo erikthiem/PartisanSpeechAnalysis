@@ -47,34 +47,36 @@ for result in all_results:
 democratic_sentences = []
 republican_sentences = []
 
+demoCount = 0
+repubCount = 0
+
 for i in range(len(speeches)):
+
+    # Remove anything within brackets [*] and parenthesis (*)
+    speeches[i] = re.sub("[\(\[].*?[\)\]]", "", speeches[i])
+
+    
+    # Remove any word that is all caps. The reasoning is that
+    # in this dataset, all capital words are speaker names when
+    # the speeches come from interviews.
+    # TODO
 
     sentences = speeches[i].split('. ')
 
-    # Remove some extraneous information to improve results
-    for i in range(len(sentences)):
-
-        # Remove anything within brackets [*]
-        sentences[i] = re.sub("([\[].*?])", "", sentences[i])
-
-        # Remove anything within parenthesis (*)
-        sentences[i] = re.sub("([\().*?])", "", sentences[i])
-
-        # Remove any word that is all caps. The reasoning is that
-        # in this dataset, all capital words are speaker names when
-        # the speeches come from interviews.
-        # TODO
-
     if parties[i] == "Democratic":
+        demoCount += 1
         for sentence in sentences:
             democratic_sentences.append(sentence)
 
     elif parties[i] == "Republican":
+        repubCount +=1
         for sentence in sentences:
             republican_sentences.append(sentence)
 
     else:
         print("ERROR! Invalid party {0}".format(parties[i]))
+
+print "Dem: {0}\nRep: {1}".format(demoCount, repubCount)
 
 # Create the sentences SQL file
 conn = sqlite3.connect(sentence_database_filename)
