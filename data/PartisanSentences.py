@@ -7,6 +7,7 @@
 
 import sqlite3
 import os.path
+import re
 
 candidate_database_filename = "speeches.db"
 sentence_database_filename = "sentences.db"
@@ -49,6 +50,20 @@ republican_sentences = []
 for i in range(len(speeches)):
 
     sentences = speeches[i].split('. ')
+
+    # Remove some extraneous information to improve results
+    for i in range(len(sentences)):
+
+        # Remove anything within brackets [*]
+        sentences[i] = re.sub("([\[].*?])", "", sentences[i])
+
+        # Remove anything within parenthesis (*)
+        sentences[i] = re.sub("([\().*?])", "", sentences[i])
+
+        # Remove any word that is all caps. The reasoning is that
+        # in this dataset, all capital words are speaker names when
+        # the speeches come from interviews.
+        # TODO
 
     if parties[i] == "Democratic":
         for sentence in sentences:
