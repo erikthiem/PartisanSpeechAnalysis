@@ -4,6 +4,8 @@ import os
 import numpy
 from scipy.sparse import lil_matrix
 from collections import defaultdict
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 
 class Sentence():
     
@@ -38,7 +40,14 @@ def generateWordCountMatrixTrain(training_sentences, word_to_id, id_to_word):
     all_word_dict = defaultdict(int)
 
     for sentence in training_sentences:
-        words = sentence.text.lower().split(" ")
+        words_with_stopwords = word_tokenize(sentence.text.lower())
+
+        words = []
+        english_stopwords = stopwords.words('english')
+        for word in words_with_stopwords:
+            if word not in english_stopwords:
+                words.append(word)
+
         word_frequencies = {w:words.count(w) for w in set(words)}
         sentence_word_frequencies.append(word_frequencies)
         for word in words:
@@ -59,6 +68,8 @@ def generateWordCountMatrixTrain(training_sentences, word_to_id, id_to_word):
         for word, frequency in sentence_word_frequencies[sentence].iteritems():
             X[sentence, word_to_id[word]] = frequency
 
+    # TODO: Remove all words that occur less than a certain threshold. Perhaps less than 5 times.
+
     # Convert X to sparse CSR format
     X = X.tocsr()
 
@@ -70,7 +81,7 @@ def generateWordCountMatrixTest(testing_sentences, trainX, word_to_id, id_to_wor
     sentence_word_frequencies = []
 
     for sentence in testing_sentences:
-        words = sentence.text.lower().split(" ")
+        words = word_tokenize(sentence.text.lower())
         word_frequencies = {w:words.count(w) for w in set(words)}
         sentence_word_frequencies.append(word_frequencies)
 
@@ -171,8 +182,6 @@ if __name__ == "__main__":
     # Load the Training data
     training_sentences = sentencesFromDB(training_data_path)
 
-    print len(training_sentences)
-
     # Generate "X[sentence_id, word_id] = word_count" sparse matrix
     word_to_id = {}
     id_to_word = {}
@@ -185,8 +194,6 @@ if __name__ == "__main__":
 
     # Load the testing data
     testing_sentences = sentencesFromDB(testing_data_path)
-
-    print len(testing_sentences)
 
     testX = generateWordCountMatrixTest(testing_sentences, trainX, word_to_id, id_to_word)  
 
@@ -204,17 +211,15 @@ if __name__ == "__main__":
             correct_classifications.append(-1)
 
     accuracy = percentSimilar(predicted_classifications, correct_classifications)
-    print("Accuracy: {0}".format(accuracy))
-
 
     frequency = [(index, count) for index,count in enumerate(weights)]
     frequency.sort(key=lambda tup: tup[1], reverse=True)
-    print("\nMost Positive Words:")
+    print("\nMost Democratic Words:")
     for i in range(20):
         print("{0} : {1}".format(id_to_word[frequency[i][0]], frequency[i][1]))
     frequency.sort(key=lambda tup: tup[1])
-    print("\nMost Negative Words:")
+    print("\nMost Republican Words:")
     for i in range(20):
         print("{0} : {1}".format(id_to_word[frequency[i][0]], frequency[i][1]))
 
-
+    print("Accuracy: {0}".format(accuracy))

@@ -1,0 +1,10 @@
+Results from 4/4/2016
+This is just after applying nltk tokenizing and stopwords, but without removing infrequent words
+
+Iterations  | Time  | Accuracy
+
+5           | 3m23  | 0.647853653466
+25          | 
+50          | 17m37 | 0.670928177944
+100         | 28m   | 0.676696809064
+200         | 55m   | 0.674098326577 <---- overfitting!

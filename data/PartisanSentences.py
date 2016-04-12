@@ -8,6 +8,7 @@
 import sqlite3
 import os.path
 import re
+from nltk.tokenize import sent_tokenize
 
 candidate_database_filename = "speeches.db"
 sentence_database_filename = "sentences.db"
@@ -54,14 +55,13 @@ for i in range(len(speeches)):
 
     # Remove anything within brackets [*] and parenthesis (*)
     speeches[i] = re.sub("[\(\[].*?[\)\]]", "", speeches[i])
-
     
     # Remove any word that is all caps. The reasoning is that
     # in this dataset, all capital words are speaker names when
     # the speeches come from interviews.
-    # TODO
+    speeches[i] = (' ').join([x for x in speeches[i].split(' ') if not x.isupper()])
 
-    sentences = speeches[i].split('. ')
+    sentences = sent_tokenize(speeches[i])
 
     if parties[i] == "Democratic":
         demoCount += 1
