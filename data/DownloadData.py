@@ -24,6 +24,8 @@ class Candidate():
 
         # Store all of the speech links
         self.speech_links = []
+        print len(self.speech_links)
+        exit(-1)  
         baseURL = "http://www.presidency.ucsb.edu"
         r = urllib.urlopen(self.all_speeches_url).read()
         soup = BeautifulSoup(r)
