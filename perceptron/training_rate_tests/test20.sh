@@ -1,0 +1,10 @@
+python perceptron.py ../data/train.db ../data/test.db 20 0.1
+python perceptron.py ../data/train.db ../data/test.db 20 0.2
+python perceptron.py ../data/train.db ../data/test.db 20 0.3
+python perceptron.py ../data/train.db ../data/test.db 20 0.4
+python perceptron.py ../data/train.db ../data/test.db 20 0.5
+python perceptron.py ../data/train.db ../data/test.db 20 0.6
+python perceptron.py ../data/train.db ../data/test.db 20 0.7
+python perceptron.py ../data/train.db ../data/test.db 20 0.8
+python perceptron.py ../data/train.db ../data/test.db 20 0.9
+python perceptron.py ../data/train.db ../data/test.db 20 1.0

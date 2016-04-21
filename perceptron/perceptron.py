@@ -68,8 +68,6 @@ def generateWordCountMatrixTrain(training_sentences, word_to_id, id_to_word):
         for word, frequency in sentence_word_frequencies[sentence].iteritems():
             X[sentence, word_to_id[word]] = frequency
 
-    # TODO: Remove all words that occur less than a certain threshold. Perhaps less than 5 times.
-
     # Convert X to sparse CSR format
     X = X.tocsr()
 
@@ -116,9 +114,9 @@ def generatePartyVector(training_sentences):
     return Y
 
 
-def train(X, Y, num_iterations):
+def train(X, Y, num_iterations, learning_rate):
 
-    weights = numpy.zeros(X.shape[1])
+    weights = numpy.zeros(X.shape[1], dtype=float)
 
     for iteration in range(num_iterations):
         
@@ -131,7 +129,7 @@ def train(X, Y, num_iterations):
             dot_product = word_counts_in_sentence.dot(weights)
 
             if numpy.sign(dot_product) != Y[sentence]:
-                weights += ( (Y[sentence] - numpy.sign(dot_product)) * (word_counts_in_sentence) ) 
+                weights += learning_rate*( (Y[sentence] - numpy.sign(dot_product)) * (word_counts_in_sentence) ) 
 
     return weights
 
@@ -163,13 +161,14 @@ def percentSimilar(list1, list2):
 
 if __name__ == "__main__":
 
-    if len(sys.argv) != 4:
+    if len(sys.argv) != 5:
         print "\nError! Expected syntax: 'python perceptron.py training_db_path testing_db_path num_iterations'\n"
         sys.exit(-1)
 
     training_data_path = sys.argv[1]
     testing_data_path = sys.argv[2]
     num_iterations = int(sys.argv[3])
+    learning_rate = float(sys.argv[4])
 
     if not os.path.isfile(training_data_path):
         print "Error! Training database {0} does not exist.\n".format(training_data_path)
@@ -190,7 +189,7 @@ if __name__ == "__main__":
     # Generate "Y[sentence_id] = party" vector
     trainY = generatePartyVector(training_sentences)
 
-    weights = train(trainX, trainY, num_iterations)
+    weights = train(trainX, trainY, num_iterations, learning_rate)
 
     # Load the testing data
     testing_sentences = sentencesFromDB(testing_data_path)

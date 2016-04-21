@@ -1,0 +1,774 @@
+Starting iteration #0
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+  0.  0.]
+Starting iteration #1
+[ 0.  -0.2 -0.2 -0.2  0.4  0.4 -0.2  0.   0.2 -0.2  0.4  0.   0.2  0.7  0.2
+  0.   0.2  0.4  0.   0. ]
+Starting iteration #2
+[ 0.  -0.2 -0.6 -0.2  0.4  1.  -0.4  0.   0.2 -0.2  0.6 -0.2  0.2  0.9  0.4
+  0.   0.2  0.8  0.   0. ]
+Starting iteration #3
+[ 0.  -0.2 -0.6  0.   0.8  1.2 -0.4  0.   0.2 -0.6  1.  -0.4  0.2  0.9  0.6
+  0.   0.4  0.8  0.   0. ]
+Starting iteration #4
+[ 0.  -0.2 -0.2 -0.2  0.8  1.4 -0.4  0.   0.2 -0.6  1.2 -0.4  0.2  0.9  0.8
+  0.   0.4  0.8  0.  -0.2]
+Starting iteration #5
+[  0.00000000e+00  -2.00000000e-01  -5.55111512e-17  -4.00000000e-01
+   1.20000000e+00   1.60000000e+00  -4.00000000e-01   0.00000000e+00
+   4.00000000e-01  -6.00000000e-01   1.40000000e+00  -4.00000000e-01
+   4.00000000e-01   9.00000000e-01   1.00000000e+00   0.00000000e+00
+   4.00000000e-01   8.00000000e-01   0.00000000e+00  -4.00000000e-01]
+Starting iteration #6
+[  2.00000000e-01  -2.00000000e-01  -5.55111512e-17  -6.00000000e-01
+   1.40000000e+00   2.00000000e+00  -6.00000000e-01   0.00000000e+00
+   6.00000000e-01  -8.00000000e-01   1.60000000e+00  -6.00000000e-01
+   4.00000000e-01   7.00000000e-01   1.20000000e+00   0.00000000e+00
+   4.00000000e-01   1.00000000e+00   0.00000000e+00  -6.00000000e-01]
+Starting iteration #7
+[ 0.2 -0.2  0.2 -0.6  1.4  2.  -0.6  0.   0.6 -0.8  1.6 -0.6  0.6  1.3  1.4
+  0.   0.4  1.2  0.  -0.6]
+Starting iteration #8
+[ 0.2 -0.2  0.2 -0.6  1.6  2.  -0.6  0.   0.6 -0.8  1.8 -0.6  0.6  0.9  1.6
+  0.   0.4  1.4  0.  -0.6]
+Starting iteration #9
+[ 0.2 -0.2  0.2 -0.6  1.6  2.  -0.6  0.   0.6 -0.8  1.8 -0.6  0.6  0.9  1.8
+  0.   0.4  1.6  0.  -0.8]
+
+Most Democratic Words:
+hillaryclinton.com : 4.2
+bullying : 4.0
+ideological : 3.8
+detection : 3.8
+richardson : 3.8
+scripture : 3.6
+stamped : 3.6
+partnering : 3.6
+intending : 3.6
+nurses : 3.4
+fraction : 3.4
+pakistani : 3.4
+fuel-efficient : 3.4
+blows : 3.4
+michelle : 3.4
+illnesses : 3.4
+3,600 : 3.4
+sputnik : 3.4
+top-down : 3.2
+preexisting : 3.2
+
+Most Republican Words:
+entitlement : -5.2
+liberals : -4.0
+conservatives : -4.0
+socialized : -4.0
+marshal : -4.0
+rehabilitative : -3.8
+incurred : -3.8
+entitlements : -3.8
+protectionism : -3.6
+thomas : -3.6
+exemption : -3.6
+dividend : -3.6
+cadets : -3.6
+statehood : -3.6
+mm-hmm.russert : -3.4
+breed : -3.4
+rancor : -3.4
+unborn : -3.4
+frustration : -3.4
+mandates : -3.4
+Accuracy: 0.657831826213
+Starting iteration #0
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+  0.  0.]
+Starting iteration #1
+[ 0.  -0.4 -0.4 -0.4  0.8  0.8 -0.4  0.   0.4 -0.4  0.8  0.   0.4  1.4  0.4
+  0.   0.4  0.8  0.   0. ]
+Starting iteration #2
+[ 0.  -0.4 -1.2 -0.4  0.8  2.  -0.8  0.   0.4 -0.4  1.2 -0.4  0.4  1.8  0.8
+  0.   0.4  1.6  0.   0. ]
+Starting iteration #3
+[ 0.  -0.4 -1.2  0.   1.6  2.4 -0.8  0.   0.4 -1.2  2.  -0.8  0.4  1.8  1.2
+  0.   0.8  1.6  0.   0. ]
+Starting iteration #4
+[ 0.  -0.4 -0.4 -0.4  1.6  2.8 -0.8  0.   0.4 -1.2  2.4 -0.8  0.4  1.8  1.6
+  0.   0.8  1.6  0.  -0.4]
+Starting iteration #5
+[  0.00000000e+00  -4.00000000e-01  -1.11022302e-16  -8.00000000e-01
+   2.40000000e+00   3.20000000e+00  -8.00000000e-01   0.00000000e+00
+   8.00000000e-01  -1.20000000e+00   2.80000000e+00  -8.00000000e-01
+   8.00000000e-01   1.80000000e+00   2.00000000e+00   0.00000000e+00
+   8.00000000e-01   1.60000000e+00   0.00000000e+00  -8.00000000e-01]
+Starting iteration #6
+[  4.00000000e-01  -4.00000000e-01  -1.11022302e-16  -1.20000000e+00
+   2.80000000e+00   4.00000000e+00  -1.20000000e+00   0.00000000e+00
+   1.20000000e+00  -1.60000000e+00   3.20000000e+00  -1.20000000e+00
+   8.00000000e-01   1.40000000e+00   2.40000000e+00   0.00000000e+00
+   8.00000000e-01   2.00000000e+00   0.00000000e+00  -1.20000000e+00]
+Starting iteration #7
+[ 0.4 -0.4  0.4 -1.2  2.8  4.  -1.2  0.   1.2 -1.6  3.2 -1.2  1.2  2.6  2.8
+  0.   0.8  2.4  0.  -1.2]
+Starting iteration #8
+[ 0.4 -0.4  0.4 -1.2  3.2  4.  -1.2  0.   1.2 -1.6  3.6 -1.2  1.2  1.8  3.2
+  0.   0.8  2.8  0.  -1.2]
+Starting iteration #9
+[ 0.4 -0.4  0.4 -1.2  3.2  4.  -1.2  0.   1.2 -1.6  3.6 -1.2  1.2  1.8  3.6
+  0.   0.8  3.2  0.  -1.6]
+
+Most Democratic Words:
+hillaryclinton.com : 8.4
+bullying : 8.0
+ideological : 7.6
+detection : 7.6
+richardson : 7.6
+scripture : 7.2
+stamped : 7.2
+partnering : 7.2
+intending : 7.2
+nurses : 6.8
+fraction : 6.8
+pakistani : 6.8
+fuel-efficient : 6.8
+blows : 6.8
+michelle : 6.8
+illnesses : 6.8
+3,600 : 6.8
+sputnik : 6.8
+top-down : 6.4
+preexisting : 6.4
+
+Most Republican Words:
+entitlement : -10.4
+liberals : -8.0
+conservatives : -8.0
+socialized : -8.0
+marshal : -8.0
+rehabilitative : -7.6
+incurred : -7.6
+entitlements : -7.6
+protectionism : -7.2
+thomas : -7.2
+exemption : -7.2
+dividend : -7.2
+cadets : -7.2
+statehood : -7.2
+mm-hmm.russert : -6.8
+breed : -6.8
+rancor : -6.8
+unborn : -6.8
+frustration : -6.8
+mandates : -6.8
+Accuracy: 0.657831826213
+Starting iteration #0
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+  0.  0.]
+Starting iteration #1
+[ 0.   0.   0.  -1.2  0.6  1.8 -0.6  0.   0.  -0.6  1.2 -0.6  0.6  4.8  0.6
+  0.   0.6  1.2  0.   0. ]
+Starting iteration #2
+[ 0.   0.  -1.2 -1.2  1.8  3.  -0.6  0.   0.  -0.6  2.4 -1.2  1.2  3.   1.2
+  0.   0.6  1.8  0.   0. ]
+Starting iteration #3
+[ 0.   0.  -1.2 -1.2  3.   3.6 -1.2  0.   0.  -1.2  3.6 -1.2  1.8  1.2  1.8
+  0.   0.6  2.4  0.  -0.6]
+Starting iteration #4
+[ 0.   0.  -1.2 -1.2  3.   4.2 -1.8  0.   0.6 -1.2  4.2 -1.2  2.4  2.4  2.4
+  0.   0.6  2.4  0.  -1.2]
+Starting iteration #5
+[ 0.   0.  -0.6 -1.2  3.6  4.2 -1.8  0.   0.6 -1.8  5.4 -1.2  3.   2.4  3.
+  0.   0.6  2.4  0.  -1.8]
+Starting iteration #6
+[ 0.   0.   0.  -1.2  4.2  4.2 -2.4  0.   0.6 -1.8  6.  -1.2  3.   1.8  3.6
+  0.   0.6  2.4  0.  -2.4]
+Starting iteration #7
+[ 0.   0.   0.  -0.6  4.2  4.2 -2.4  0.   0.6 -1.8  6.  -1.2  3.6  1.2  4.2
+  0.   0.6  2.4  0.  -2.4]
+Starting iteration #8
+[ 0.   0.   0.  -1.2  4.2  4.2 -2.4  0.   0.6 -2.4  6.6 -1.2  3.6  1.8  4.8
+  0.   0.6  2.4  0.  -2.4]
+Starting iteration #9
+[ 0.   0.   0.6 -1.2  4.8  4.2 -3.   0.   0.6 -2.4  6.6 -1.2  3.6  1.2  5.4
+  0.   0.6  3.   0.  -3. ]
+
+Most Democratic Words:
+hillaryclinton.com : 12.0
+bullying : 12.0
+michelle : 11.4
+detection : 11.4
+intending : 10.8
+preexisting : 10.8
+childcare : 10.8
+ideological : 10.8
+partnering : 10.8
+right.zakaria : 10.8
+nurses : 10.2
+autoworker : 10.2
+pakistani : 10.2
+blows : 10.2
+opt : 10.2
+scripture : 10.2
+richardson : 10.2
+fraction : 9.6
+preventive : 9.6
+fuel-efficient : 9.6
+
+Most Republican Words:
+entitlement : -13.8
+marshal : -13.2
+conservatives : -12.6
+entitlements : -12.0
+liberals : -11.4
+protectionism : -11.4
+socialized : -11.4
+rancor : -10.8
+rehabilitative : -10.8
+unborn : -10.8
+exemption : -10.8
+conservative : -10.2
+civilized : -10.2
+l. : -10.2
+incurred : -10.2
+milking : -10.2
+cadets : -10.2
+thompson : -10.2
+enterprises : -10.2
+upbeat : -9.6
+Accuracy: 0.650452135953
+Starting iteration #0
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+  0.  0.]
+Starting iteration #1
+[ 0.  -0.8 -0.8 -0.8  1.6  1.6 -0.8  0.   0.8 -0.8  1.6  0.   0.8  2.8  0.8
+  0.   0.8  1.6  0.   0. ]
+Starting iteration #2
+[ 0.  -0.8 -2.4 -0.8  1.6  4.  -1.6  0.   0.8 -0.8  2.4 -0.8  0.8  3.6  1.6
+  0.   0.8  3.2  0.   0. ]
+Starting iteration #3
+[ 0.  -0.8 -2.4  0.   3.2  4.8 -1.6  0.   0.8 -2.4  4.  -1.6  0.8  3.6  2.4
+  0.   1.6  3.2  0.   0. ]
+Starting iteration #4
+[ 0.  -0.8 -0.8 -0.8  3.2  5.6 -1.6  0.   0.8 -2.4  4.8 -1.6  0.8  3.6  3.2
+  0.   1.6  3.2  0.  -0.8]
+Starting iteration #5
+[  0.00000000e+00  -8.00000000e-01  -2.22044605e-16  -1.60000000e+00
+   4.80000000e+00   6.40000000e+00  -1.60000000e+00   0.00000000e+00
+   1.60000000e+00  -2.40000000e+00   5.60000000e+00  -1.60000000e+00
+   1.60000000e+00   3.60000000e+00   4.00000000e+00   0.00000000e+00
+   1.60000000e+00   3.20000000e+00   0.00000000e+00  -1.60000000e+00]
+Starting iteration #6
+[  8.00000000e-01  -8.00000000e-01  -2.22044605e-16  -2.40000000e+00
+   5.60000000e+00   8.00000000e+00  -2.40000000e+00   0.00000000e+00
+   2.40000000e+00  -3.20000000e+00   6.40000000e+00  -2.40000000e+00
+   1.60000000e+00   2.80000000e+00   4.80000000e+00   0.00000000e+00
+   1.60000000e+00   4.00000000e+00   0.00000000e+00  -2.40000000e+00]
+Starting iteration #7
+[ 0.8 -0.8  0.8 -2.4  5.6  8.  -2.4  0.   2.4 -3.2  6.4 -2.4  2.4  5.2  5.6
+  0.   1.6  4.8  0.  -2.4]
+Starting iteration #8
+[ 0.8 -0.8  0.8 -2.4  6.4  8.  -2.4  0.   2.4 -3.2  7.2 -2.4  2.4  3.6  6.4
+  0.   1.6  5.6  0.  -2.4]
+Starting iteration #9
+[ 0.8 -0.8  0.8 -2.4  6.4  8.  -2.4  0.   2.4 -3.2  7.2 -2.4  2.4  3.6  7.2
+  0.   1.6  6.4  0.  -3.2]
+
+Most Democratic Words:
+hillaryclinton.com : 16.8
+bullying : 16.0
+ideological : 15.2
+detection : 15.2
+richardson : 15.2
+scripture : 14.4
+stamped : 14.4
+partnering : 14.4
+intending : 14.4
+nurses : 13.6
+fraction : 13.6
+pakistani : 13.6
+fuel-efficient : 13.6
+blows : 13.6
+michelle : 13.6
+illnesses : 13.6
+3,600 : 13.6
+sputnik : 13.6
+top-down : 12.8
+preexisting : 12.8
+
+Most Republican Words:
+entitlement : -20.8
+liberals : -16.0
+conservatives : -16.0
+socialized : -16.0
+marshal : -16.0
+rehabilitative : -15.2
+incurred : -15.2
+entitlements : -15.2
+protectionism : -14.4
+thomas : -14.4
+exemption : -14.4
+dividend : -14.4
+cadets : -14.4
+statehood : -14.4
+mm-hmm.russert : -13.6
+breed : -13.6
+rancor : -13.6
+unborn : -13.6
+frustration : -13.6
+mandates : -13.6
+Accuracy: 0.657831826213
+Starting iteration #0
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+  0.  0.]
+Starting iteration #1
+[ 0.  -1.  -1.  -1.5  2.   3.   0.   0.   1.  -1.   2.  -1.   1.   5.   1.
+  0.   1.   2.5  0.   0. ]
+Starting iteration #2
+[ 0.  -1.   0.  -2.5  3.   5.  -1.   0.   1.  -2.   4.  -2.   2.  -0.5  2.
+  0.   1.   3.5  0.   0. ]
+Starting iteration #3
+[ 0.  -1.  -1.  -3.5  4.   7.  -1.   0.   1.  -3.   6.  -2.   2.5  3.5  3.
+  0.   1.   4.5  0.  -0.5]
+Starting iteration #4
+[ 0.5 -1.  -0.5 -3.5  5.   7.  -1.5  0.   1.  -3.   8.  -2.   2.5  1.   4.
+  0.   2.   5.5  0.  -1.5]
+Starting iteration #5
+[ 0.5 -1.   0.  -3.5  5.   7.  -2.5  0.   1.5 -3.   8.  -2.   3.   4.   5.
+  0.   2.   5.5  0.  -1.5]
+Starting iteration #6
+[ 1.5 -1.  -0.5 -3.5  5.   8.  -2.5  0.   1.5 -3.   8.5 -2.   4.   6.   6.
+  0.   2.   6.5  0.  -2.5]
+Starting iteration #7
+[ 1.5 -1.  -0.5 -3.5  5.   8.  -2.5  0.   1.5 -4.   9.5 -2.   4.5  4.   7.
+  0.   2.   6.5  0.  -2.5]
+Starting iteration #8
+[ 1.5 -1.   0.5 -4.   6.   8.  -3.5  0.   1.5 -4.   9.5 -2.   5.5  4.5  8.
+  0.   2.   6.5  0.  -2.5]
+Starting iteration #9
+[ 1.5 -1.   1.  -3.   7.   9.  -3.5  0.   2.5 -4.5  9.5 -2.   5.5  4.   8.
+  0.   2.   6.5  0.  -2.5]
+
+Most Democratic Words:
+hillaryclinton.com : 22.0
+bullying : 21.0
+richardson : 20.0
+michelle : 19.5
+ideological : 19.0
+partnering : 19.0
+blows : 18.0
+detection : 18.0
+intending : 18.0
+nurses : 17.5
+scripture : 17.5
+stamped : 17.5
+payroll : 17.0
+right.zakaria : 17.0
+congressand : 17.0
+marijuana : 16.5
+references : 16.5
+debacle : 16.5
+maternity : 16.0
+pakistani : 16.0
+
+Most Republican Words:
+entitlement : -23.5
+conservatives : -20.0
+marshal : -19.5
+entitlements : -19.5
+enterprises : -19.5
+rancor : -19.0
+statehood : -19.0
+unborn : -18.5
+socialized : -18.0
+l. : -18.0
+liberals : -17.5
+exemption : -17.5
+mm-hmm.russert : -17.0
+unconditional : -17.0
+stamps : -17.0
+thompson : -17.0
+clean-coal : -16.5
+class.i : -16.5
+dividend : -16.5
+milking : -16.5
+Accuracy: 0.652167134394
+Starting iteration #0
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+  0.  0.]
+Starting iteration #1
+[ 0.   0.   0.  -2.4  1.2  3.6 -1.2  0.   0.  -1.2  2.4 -1.2  1.2  9.6  1.2
+  0.   1.2  2.4  0.   0. ]
+Starting iteration #2
+[ 0.   0.  -2.4 -2.4  3.6  6.  -1.2  0.   0.  -1.2  4.8 -2.4  2.4  6.   2.4
+  0.   1.2  3.6  0.   0. ]
+Starting iteration #3
+[ 0.   0.  -2.4 -2.4  6.   7.2 -2.4  0.   0.  -2.4  7.2 -2.4  3.6  2.4  3.6
+  0.   1.2  4.8  0.  -1.2]
+Starting iteration #4
+[ 0.   0.  -2.4 -2.4  6.   8.4 -3.6  0.   1.2 -2.4  8.4 -2.4  4.8  4.8  4.8
+  0.   1.2  4.8  0.  -2.4]
+Starting iteration #5
+[  0.    0.   -1.2  -2.4   7.2   8.4  -3.6   0.    1.2  -3.6  10.8  -2.4
+   6.    4.8   6.    0.    1.2   4.8   0.   -3.6]
+Starting iteration #6
+[  0.    0.    0.   -2.4   8.4   8.4  -4.8   0.    1.2  -3.6  12.   -2.4
+   6.    3.6   7.2   0.    1.2   4.8   0.   -4.8]
+Starting iteration #7
+[  0.    0.    0.   -1.2   8.4   8.4  -4.8   0.    1.2  -3.6  12.   -2.4
+   7.2   2.4   8.4   0.    1.2   4.8   0.   -4.8]
+Starting iteration #8
+[  0.    0.    0.   -2.4   8.4   8.4  -4.8   0.    1.2  -4.8  13.2  -2.4
+   7.2   3.6   9.6   0.    1.2   4.8   0.   -4.8]
+Starting iteration #9
+[  0.    0.    1.2  -2.4   9.6   8.4  -6.    0.    1.2  -4.8  13.2  -2.4
+   7.2   2.4  10.8   0.    1.2   6.    0.   -6. ]
+
+Most Democratic Words:
+hillaryclinton.com : 24.0
+bullying : 24.0
+michelle : 22.8
+detection : 22.8
+intending : 21.6
+preexisting : 21.6
+childcare : 21.6
+ideological : 21.6
+partnering : 21.6
+right.zakaria : 21.6
+nurses : 20.4
+autoworker : 20.4
+pakistani : 20.4
+blows : 20.4
+opt : 20.4
+scripture : 20.4
+richardson : 20.4
+fraction : 19.2
+preventive : 19.2
+fuel-efficient : 19.2
+
+Most Republican Words:
+entitlement : -27.6
+marshal : -26.4
+conservatives : -25.2
+entitlements : -24.0
+liberals : -22.8
+protectionism : -22.8
+socialized : -22.8
+rancor : -21.6
+rehabilitative : -21.6
+unborn : -21.6
+exemption : -21.6
+conservative : -20.4
+civilized : -20.4
+l. : -20.4
+incurred : -20.4
+milking : -20.4
+cadets : -20.4
+thompson : -20.4
+enterprises : -20.4
+upbeat : -19.2
+Accuracy: 0.650452135953
+Starting iteration #0
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+  0.  0.]
+Starting iteration #1
+[ 1.4 -1.4  1.4 -1.4  0.   4.2 -1.4  0.   0.  -1.4  2.8 -1.4  0.   1.4  1.4
+  0.   1.4  2.8  0.  -1.4]
+Starting iteration #2
+[ 1.4 -2.8  0.  -1.4  2.8  7.  -2.8  0.   1.4 -2.8  5.6 -2.8  1.4  2.8  2.8
+  0.   1.4  7.   0.  -1.4]
+Starting iteration #3
+[ 1.4 -2.8  0.  -2.8  4.2  8.4 -2.8  0.   1.4 -4.2  8.4 -2.8  2.8  4.2  4.2
+  0.   2.8  8.4  0.  -1.4]
+Starting iteration #4
+[ 1.4 -2.8 -1.4 -2.8  7.   9.8 -2.8  0.   1.4 -5.6  9.8 -2.8  2.8  5.6  5.6
+  0.   2.8  8.4  0.  -1.4]
+Starting iteration #5
+[  1.4  -2.8   0.   -2.8   7.    9.8  -4.2   0.    1.4  -5.6  11.2  -2.8
+   4.2   5.6   7.    0.    2.8   9.8   0.   -1.4]
+Starting iteration #6
+[  1.4  -4.2   0.   -2.8   8.4  11.2  -4.2   0.    1.4  -5.6  11.2  -2.8
+   5.6   4.2   8.4   0.    2.8   9.8   0.   -1.4]
+Starting iteration #7
+[  1.4  -4.2  -1.4  -2.8   8.4  11.2  -4.2   0.    1.4  -5.6  12.6  -2.8
+   5.6   5.6   8.4   0.    2.8   9.8   0.   -1.4]
+Starting iteration #8
+[  1.4  -4.2  -1.4  -2.8  11.2  11.2  -5.6   0.    1.4  -7.   12.6  -2.8
+   7.    4.2   9.8   0.    2.8   9.8   0.   -1.4]
+Starting iteration #9
+[  1.4  -4.2  -2.8  -4.2  11.2  11.2  -5.6   0.    1.4  -7.   14.   -2.8
+   7.    5.6   9.8   0.    2.8   9.8   0.   -2.8]
+
+Most Democratic Words:
+richardson : 29.4
+hillaryclinton.com : 29.4
+right.zakaria : 28.0
+nurses : 28.0
+detection : 27.3
+bullying : 26.6
+michelle : 26.6
+intending : 25.2
+sided : 25.2
+childcare : 25.2
+ideological : 25.2
+scripture : 25.2
+preexisting : 23.8
+blows : 23.8
+opt : 23.8
+marijuana : 23.8
+payroll : 23.8
+references : 23.8
+stamped : 23.8
+sickness : 22.4
+
+Most Republican Words:
+entitlement : -32.9
+conservatives : -28.0
+socialized : -28.0
+rancor : -28.0
+marshal : -28.0
+entitlements : -28.0
+liberals : -26.6
+civilized : -26.6
+l. : -26.6
+exemption : -26.6
+statehood : -25.2
+protectionism : -25.2
+unborn : -25.2
+dividend : -25.2
+thompson : -23.8
+bureaucrat : -23.8
+reformed : -23.8
+clean-coal : -23.8
+incurred : -23.8
+cadets : -23.8
+Accuracy: 0.663392578734
+Starting iteration #0
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+  0.  0.]
+Starting iteration #1
+[ 0.  -1.6 -1.6 -1.6  3.2  3.2 -1.6  0.   1.6 -1.6  3.2  0.   1.6  5.6  1.6
+  0.   1.6  3.2  0.   0. ]
+Starting iteration #2
+[ 0.  -1.6 -4.8 -1.6  3.2  8.  -3.2  0.   1.6 -1.6  4.8 -1.6  1.6  7.2  3.2
+  0.   1.6  6.4  0.   0. ]
+Starting iteration #3
+[ 0.  -1.6 -4.8  0.   6.4  9.6 -3.2  0.   1.6 -4.8  8.  -3.2  1.6  7.2  4.8
+  0.   3.2  6.4  0.   0. ]
+Starting iteration #4
+[  0.   -1.6  -1.6  -1.6   6.4  11.2  -3.2   0.    1.6  -4.8   9.6  -3.2
+   1.6   7.2   6.4   0.    3.2   6.4   0.   -1.6]
+Starting iteration #5
+[  0.00000000e+00  -1.60000000e+00  -4.44089210e-16  -3.20000000e+00
+   9.60000000e+00   1.28000000e+01  -3.20000000e+00   0.00000000e+00
+   3.20000000e+00  -4.80000000e+00   1.12000000e+01  -3.20000000e+00
+   3.20000000e+00   7.20000000e+00   8.00000000e+00   0.00000000e+00
+   3.20000000e+00   6.40000000e+00   0.00000000e+00  -3.20000000e+00]
+Starting iteration #6
+[  1.60000000e+00  -1.60000000e+00  -4.44089210e-16  -4.80000000e+00
+   1.12000000e+01   1.60000000e+01  -4.80000000e+00   0.00000000e+00
+   4.80000000e+00  -6.40000000e+00   1.28000000e+01  -4.80000000e+00
+   3.20000000e+00   5.60000000e+00   9.60000000e+00   0.00000000e+00
+   3.20000000e+00   8.00000000e+00   0.00000000e+00  -4.80000000e+00]
+Starting iteration #7
+[  1.6  -1.6   1.6  -4.8  11.2  16.   -4.8   0.    4.8  -6.4  12.8  -4.8
+   4.8  10.4  11.2   0.    3.2   9.6   0.   -4.8]
+Starting iteration #8
+[  1.6  -1.6   1.6  -4.8  12.8  16.   -4.8   0.    4.8  -6.4  14.4  -4.8
+   4.8   7.2  12.8   0.    3.2  11.2   0.   -4.8]
+Starting iteration #9
+[  1.6  -1.6   1.6  -4.8  12.8  16.   -4.8   0.    4.8  -6.4  14.4  -4.8
+   4.8   7.2  14.4   0.    3.2  12.8   0.   -6.4]
+
+Most Democratic Words:
+hillaryclinton.com : 33.6
+bullying : 32.0
+ideological : 30.4
+detection : 30.4
+richardson : 30.4
+scripture : 28.8
+stamped : 28.8
+partnering : 28.8
+intending : 28.8
+nurses : 27.2
+fraction : 27.2
+pakistani : 27.2
+fuel-efficient : 27.2
+blows : 27.2
+michelle : 27.2
+illnesses : 27.2
+3,600 : 27.2
+sputnik : 27.2
+top-down : 25.6
+preexisting : 25.6
+
+Most Republican Words:
+entitlement : -41.6
+liberals : -32.0
+conservatives : -32.0
+socialized : -32.0
+marshal : -32.0
+rehabilitative : -30.4
+incurred : -30.4
+entitlements : -30.4
+protectionism : -28.8
+thomas : -28.8
+exemption : -28.8
+dividend : -28.8
+cadets : -28.8
+statehood : -28.8
+mm-hmm.russert : -27.2
+breed : -27.2
+rancor : -27.2
+unborn : -27.2
+frustration : -27.2
+mandates : -27.2
+Accuracy: 0.657831826213
+Starting iteration #0
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+  0.  0.]
+Starting iteration #1
+[ 1.8  0.   1.8  0.   3.6  3.6  0.   0.   1.8  0.   3.6 -1.8  0.   7.2  1.8
+  0.   1.8  3.6  0.  -1.8]
+Starting iteration #2
+[ 1.8 -1.8 -1.8 -1.8  5.4  9.   0.   0.   3.6 -3.6  7.2 -1.8  1.8  7.2  3.6
+  0.   1.8  5.4  0.  -3.6]
+Starting iteration #3
+[  1.8  -1.8   0.   -1.8   5.4  10.8  -1.8   0.    3.6  -5.4  10.8  -1.8
+   3.6   5.4   5.4   0.    1.8   9.    0.   -5.4]
+Starting iteration #4
+[  1.8  -1.8  -1.8  -1.8   7.2  10.8  -3.6   0.    3.6  -5.4  12.6  -1.8
+   5.4   6.3   7.2   0.    1.8   9.    0.   -7.2]
+Starting iteration #5
+[  3.6  -1.8  -1.8  -1.8   9.   10.8  -3.6   0.    3.6  -5.4  14.4  -1.8
+   5.4   6.3   9.    0.    1.8  10.8   0.   -7.2]
+Starting iteration #6
+[  3.6  -1.8  -1.8  -1.8  10.8  10.8  -5.4   0.    3.6  -5.4  14.4  -1.8
+   7.2   8.1  10.8   0.    1.8  10.8   0.   -7.2]
+Starting iteration #7
+[  3.6  -1.8  -1.8  -1.8  10.8  12.6  -5.4   0.    3.6  -7.2  14.4  -1.8
+   7.2   9.9  12.6   0.    1.8  10.8   0.   -7.2]
+Starting iteration #8
+[  3.6  -1.8  -1.8  -3.6  10.8  14.4  -5.4   0.    3.6  -7.2  14.4  -1.8
+   7.2   6.3  14.4   0.    1.8  10.8   0.   -7.2]
+Starting iteration #9
+[  3.6  -1.8  -3.6  -3.6  10.8  14.4  -7.2   0.    5.4  -9.   16.2  -1.8
+   7.2   4.5  14.4   0.    1.8  10.8   0.   -7.2]
+
+Most Democratic Words:
+michelle : 39.6
+hillaryclinton.com : 36.0
+scripture : 36.0
+detection : 36.0
+bullying : 34.2
+ideological : 34.2
+partnering : 34.2
+nurses : 32.4
+fuel-efficient : 32.4
+illnesses : 32.4
+richardson : 32.4
+3,600 : 32.4
+right.zakaria : 32.4
+blows : 30.6
+7.8 : 30.6
+stamped : 30.6
+parking : 30.6
+congressand : 30.6
+intending : 30.6
+references : 29.7
+
+Most Republican Words:
+entitlement : -43.2
+conservatives : -39.6
+socialized : -36.0
+unborn : -35.1
+liberals : -34.2
+rancor : -34.2
+rehabilitative : -34.2
+exemption : -34.2
+marshal : -34.2
+stamps : -34.2
+entitlements : -34.2
+unconditional : -32.4
+incurred : -32.4
+milking : -32.4
+civilized : -30.6
+retirees : -30.6
+dividend : -30.6
+cadets : -30.6
+klein : -30.6
+fellowship : -30.6
+Accuracy: 0.667446211413
+Starting iteration #0
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+  0.  0.]
+Starting iteration #1
+[  0.  -2.  -2.  -3.   4.   6.   0.   0.   2.  -2.   4.  -2.   2.  10.   2.
+   0.   2.   5.   0.   0.]
+Starting iteration #2
+[  0.  -2.   0.  -5.   6.  10.  -2.   0.   2.  -4.   8.  -4.   4.  -1.   4.
+   0.   2.   7.   0.   0.]
+Starting iteration #3
+[  0.  -2.  -2.  -7.   8.  14.  -2.   0.   2.  -6.  12.  -4.   5.   7.   6.
+   0.   2.   9.   0.  -1.]
+Starting iteration #4
+[  1.  -2.  -1.  -7.  10.  14.  -3.   0.   2.  -6.  16.  -4.   5.   2.   8.
+   0.   4.  11.   0.  -3.]
+Starting iteration #5
+[  1.  -2.   0.  -7.  10.  14.  -5.   0.   3.  -6.  16.  -4.   6.   8.  10.
+   0.   4.  11.   0.  -3.]
+Starting iteration #6
+[  3.  -2.  -1.  -7.  10.  16.  -5.   0.   3.  -6.  17.  -4.   8.  12.  12.
+   0.   4.  13.   0.  -5.]
+Starting iteration #7
+[  3.  -2.  -1.  -7.  10.  16.  -5.   0.   3.  -8.  19.  -4.   9.   8.  14.
+   0.   4.  13.   0.  -5.]
+Starting iteration #8
+[  3.  -2.   1.  -8.  12.  16.  -7.   0.   3.  -8.  19.  -4.  11.   9.  16.
+   0.   4.  13.   0.  -5.]
+Starting iteration #9
+[  3.  -2.   2.  -6.  14.  18.  -7.   0.   5.  -9.  19.  -4.  11.   8.  16.
+   0.   4.  13.   0.  -5.]
+
+Most Democratic Words:
+hillaryclinton.com : 44.0
+bullying : 42.0
+richardson : 40.0
+michelle : 39.0
+ideological : 38.0
+partnering : 38.0
+blows : 36.0
+detection : 36.0
+intending : 36.0
+nurses : 35.0
+scripture : 35.0
+stamped : 35.0
+payroll : 34.0
+right.zakaria : 34.0
+congressand : 34.0
+marijuana : 33.0
+references : 33.0
+debacle : 33.0
+maternity : 32.0
+pakistani : 32.0
+
+Most Republican Words:
+entitlement : -47.0
+conservatives : -40.0
+marshal : -39.0
+entitlements : -39.0
+enterprises : -39.0
+rancor : -38.0
+statehood : -38.0
+unborn : -37.0
+socialized : -36.0
+l. : -36.0
+liberals : -35.0
+exemption : -35.0
+mm-hmm.russert : -34.0
+unconditional : -34.0
+stamps : -34.0
+thompson : -34.0
+clean-coal : -33.0
+class.i : -33.0
+dividend : -33.0
+milking : -33.0
+Accuracy: 0.652167134394
