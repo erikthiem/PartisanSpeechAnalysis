@@ -56,7 +56,9 @@ class test:
 		m+=1
 
 	new = list(set(demArray) & set(repArray))
-	print float(len(new))/100.0
+	#print float(len(new))/25.0
+	print demArray
+	print repArray
 
 	# Calculate Accuracy
 	#for row in results:

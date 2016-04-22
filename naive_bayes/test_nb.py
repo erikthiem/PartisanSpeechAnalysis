@@ -48,15 +48,17 @@ class test:
 	repWords.sort(reverse=True)
 
 	m = 0
-	while m < 25:
+	while m < 100:
 		d = demWords[m]
 		r = repWords[m]
-		demArray.append(d[1][0])
-		repArray.append(r[1][0])
+		demArray.append(str(m) + " " + d[1][0])
+		repArray.append(str(m) + " " + r[1][0])
 		m+=1
 
 	new = list(set(demArray) & set(repArray))
-	print float(len(new))/25.0
+	#print float(len(new))/25.0
+	print demArray
+	print repArray
 
 	# Calculate Accuracy
 	#for row in results:
